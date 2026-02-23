@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food of Punjab</title>
+</head>
+<style>
+body{
+	background-color: darkslategray;
+}	
+.pokemon {
+  width: 280px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 200px inset, 0 0 5px grey;
+  transition: box-shadow 1s;
+  margin: 5px;
+}
+.pokemon::after {
+  width: 80%;
+  height: 90%;
+  font-size: 60px;
+  font-family: Freestyle Script;
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s .5s;
+}
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+.pokemon:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#bulbasaur {
+  background-image: url(amri.jpg);
+  background-size: cover;
+  color: rgba(71, 121, 94, .9);
+}
+
+#bulbasaur::after {
+  content: 'Amritsari Kulcha';
+}
+
+#charmander {
+  background-image: url(lass.jpg);
+  background-size: cover;
+  color: rgba(221, 86, 63, .9);
+}
+
+#charmander::after {
+  content: 'Lassi'
+}
+
+#squirtle {
+  background-image: url(chh.jpg);
+  background-size: cover;
+  color: rgba(65, 102, 114, .9);
+}
+
+#squirtle::after {
+  content: 'Chhole Bhature'
+}
+
+#pikachu {
+  background-image: url(tan.jpg);
+  background-size: cover;
+  color: rgba(179, 152, 98, .9);
+}
+
+#pikachu::after {
+  content: 'Tandoori Chicken'
+}
+#pika {
+  background-image: url(fish.jpg);
+  background-size: cover;
+  color: rgba(179, 152, 98, .9);
+}
+
+#pika::after {
+  content: 'Amritsari Fish'
+}
+
+#wrapper {
+  width: 500px;
+  height: 500px;
+}       
+h2{
+		font-size: 60px;
+		font-family: Brush Script MT;
+		text-align: center;	
+     	text-shadow:0 0 25px;
+     	color: white;
+}
+p{
+		font-size: 30px;
+		color: white;
+		font-family:Monotype Corsiva;
+		text-align: justify;
+		margin: 10px;
+		padding: 30px;
+		text-shadow:3px 2px 7px;
+}
+</style>
+<body>
+	<h2>Punjab</h2>
+   	<p>Punjab is one of the most prosperous states in India, and the food of Punjab attests to this in every morsel. Even though it is known as the breadbasket of India, we get so much more than just that in their cuisine. Down south, a lot of people think that most North Indians are Punjabi and you can't blame them given all the Punjabi influence in the culture up north! No matter what divides people, food has the power to unite us as Indians, especially the rich Punjabi food with its succulent taste and desi ghee.</p>
+   <div id="wrapper">
+   	<table>
+   <tr>
+  <th><div id="bulbasaur" class="pokemon"></div></th>
+  <th><div id="charmander" class="pokemon"></div></th>
+  <th><div id="squirtle" class="pokemon"></div></th>
+  <th><div id="pikachu" class="pokemon"></div></th>
+  <th><div id="pika" class="pokemon"></div></th>
+</tr>
+</table>
+</div>
+</a>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snaks</title>
+</head>
+<style>
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:#000;
+}	
+.box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	animation: animate 20s linear infinite;
+}
+@keyframes animate{
+	0%
+	{
+       transform: perspective(1000px) rotateY(0deg);
+	}
+	100%
+	{
+	   transform: perspective(1000px) rotateY(360deg);
+	}
+}
+.box span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 90px;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+	-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+.box span img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 270%;
+	object-fit: cover;
+}
+</style>
+<body>
+	<table>
+	<tr><th>
+	<div class="box">
+		<span style="--i:1;"><img src="1.5.jpg"></span>
+		<span style="--i:2;"><img src="1.13.jpg"></span>
+		<span style="--i:3;"><img src="1.10.jpg"></span>
+		<span style="--i:4;"><img src="1.11.jpg"></span>
+        <span style="--i:5;"><img src="1.19.jpg"></span>
+        <span style="--i:6;"><img src="1.16.jpg"></span>
+        <span style="--i:7;"><img src="1.7.jpg"></span>
+        <span style="--i:8;"><img src="1.2.jpg"></span>
+     </div>
+</body>
+</html>

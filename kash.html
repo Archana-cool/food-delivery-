@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food of Kashmir</title>
+</head>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+	font-family: verdana;
+}
+.container{
+	width: 1280px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 40px;
+}
+.container .box{
+	position: relative;
+	width: 250px;
+	height: 300px;
+	background: #ff0;
+	margin: 3px;
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: 35px;
+}
+.container .box .imgBox{
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+
+}
+.container .box .imgBox img{
+	max-width: 100%;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+	transform: scale(1);
+}
+.container .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+	border-radius: 25px;
+}
+.container .box:hover .details{
+	transform: scaleY(1);
+}
+.container .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	border-radius: 8px;
+}
+h3{
+		font-size: 60px;
+		font-family: Brush Script MT;
+		text-align: center;	
+     	text-shadow:0 0 25px;
+     	color: white;
+}
+p{
+		font-size: 30px;
+		color: white;
+		font-family:Monotype Corsiva;
+		text-align: justify;
+		margin: 10px;
+		padding: 30px;
+		text-shadow:3px 2px 7px;
+}
+h2{
+	font-family: Freestyle Script;
+	font-size: 40px;
+}
+</style>
+<body>
+	<h3>Kashmir</h3>
+	<p>The crown of the nation is not just soothing to the eyes but also does wonders for your taste. Mouthwatering delicacies of Kashmiri food will leave your stomach full but your tongue still craving for more.Kashmir and Leh regions have different cuisines, each to their own and once you try them out you'll realize why this variety could not have fit one plate at once. Here is a list of some of the most popular Kashmiri food dishes which everyone must try at least once in their lifetime.</p>
+	<table>
+		<tr>
+			<th>
+<div class="container">
+	<div class="box">
+		<div class="imgBox">
+			<img src="mod.jpg" height="300" width="250">
+	</div>
+	<div class="details">
+		<div class="content">
+      <h2>Modur pulao</h2>
+  </div>
+</div>
+</div>
+	<div class="box">
+		<div class="imgBox">
+			<img src="dum.jpg" height="300" width="250">
+	</div>
+	<div class="details">
+		<div class="content">
+      <h2>Dum olav</h2>
+  </div>
+</div>
+</div>
+	<div class="box">
+		<div class="imgBox">
+			<img src="yak.jpg" height="300" width="250">
+	</div>
+	<div class="details">
+		<div class="content">
+      <h2>Yakhni lamb curry</h2>
+  </div>
+</div>
+</div>
+	<div class="box">
+		<div class="imgBox">
+			<img src="roth.jpg" height="300" width="250">
+	</div>
+	<div class="details">
+		<div class="content">
+      <h2>Roth</h2>
+  </div>
+</div>
+</div>
+<div class="box">
+		<div class="imgBox">
+			<img src="kas.jpg" height="300" width="250">
+	</div>
+	<div class="details">
+		<div class="content">
+      <h2>Kashmir baingan</h2>
+  </div>
+</div>
+</div>
+	</div></th>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cakes</title>
+</head>
+<style>
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:#000;
+}	
+.box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	animation: animate 20s linear infinite;
+}
+@keyframes animate{
+	0%
+	{
+       transform: perspective(1000px) rotateY(0deg);
+	}
+	100%
+	{
+	   transform: perspective(1000px) rotateY(360deg);
+	}
+}
+.box span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 90px;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+	-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+.box span img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 270%;
+	object-fit: cover;
+}
+</style>
+<body>
+	<table>
+	<tr><th>
+	<div class="box">
+		<span style="--i:1;"><img src="3.1.jpg"></span>
+		<span style="--i:2;"><img src="3.14.jpg"></span>
+		<span style="--i:3;"><img src="3.13.jpg"></span>
+		<span style="--i:4;"><img src="3.12.jpg"></span>
+        <span style="--i:5;"><img src="3.3.jpg"></span>
+        <span style="--i:6;"><img src="3.4.jpg"></span>
+        <span style="--i:7;"><img src="3.7.jpg"></span>
+        <span style="--i:8;"><img src="3.15.jpg"></span>
+     </div>
+</body>
+</html>

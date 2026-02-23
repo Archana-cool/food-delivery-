@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food of Odisha</title>
+</head>
+<style>
+	body {
+  background-color: dimgray;
+}
+
+.container {
+  width  : 960px;
+  margin : 0 auto;
+}
+
+.container:after{
+  clear   : both;
+  display : table;
+  content : '';
+}
+
+.bg-items {
+  padding: 20px;
+  width  : 400px;
+  height : 600px;
+  margin : 10px;
+  background-color: white;
+  float  : left;
+  cursor : pointer;
+  box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+.items {
+  width  : 400px;
+  height : 600px;
+  position: relative;
+  overflow: hidden;
+  background-color: #102B46;
+}
+
+.details {
+  background-color : rgba(0,0,0,0.5);
+  width  : 400px;
+  height : 600px;
+  padding : 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family :  Freestyle Script;
+  color       : #fff;
+  opacity : 0;
+  transition : opacity .8s;
+}
+.items:hover .details {
+  opacity : 1;
+  transition : opacity .2s .3s;
+}
+
+.items div {
+  position : absolute;
+}
+.tl5 {
+  border-top   : 161px solid #e43;
+  border-right : 241px solid transparent;
+  top  : -160px;
+  left : -240px;
+  transition   : all .3s;			
+}
+
+.br5 {
+  border-bottom : 161px solid #e43;
+  border-left   : 241px solid transparent;
+  bottom : -160px;
+  right  : -240px;
+  transition   : all .3s;			
+}
+
+.items:hover .tl5 {
+  top  : 0;
+  left : 0;
+  transition   : all .3s;
+}
+
+.items:hover .br5 {
+  bottom : 0;
+  right  : 0;
+  transition   : all .3s;
+}
+h2{
+		font-size: 60px;
+		font-family: Brush Script MT;
+		text-align: center;	
+     	text-shadow:0 0 25px;
+     	color: white;
+}
+p{
+		font-size: 30px;
+		color: white;
+		font-family:Monotype Corsiva;
+		text-align: justify;
+		margin: 10px;
+		padding: 30px;
+		text-shadow:3px 2px 7px;
+}
+</style>
+<body>
+	<h2>Odisha</h2>
+	<p>The cuisine of Odisha, popularly known as the Odia Cuisine, is a melange of varied items and practices. As Odisha is bordered by both North Indian and South Indian states, food of Odisha is majorly influenced by the food of North India, Bengal and Assam. Rice is the staple food of Odisha with mustard oil used as a cooking medium in many households. Yoghurt forms a major part of many dishes of Odisha while many sweets are based on chhena (a form of cheese).</p>
+   <div class="container">
+  <div class="bg-items">
+    <div class="items" style="background-image : url(nua.jpg); background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Nuakhai</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url(dal.jpg);background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Dalma</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url(kani.jpg);background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Kanika</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url(pakh.jpg);background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Pakhala Bhata</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url(mach.jpg);background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Macha Ghanta</h3>
+        </div>
+    </div>
+  </div>
+  <div class="bg-items">
+    <div class="items" style="background-image : url(ili.jpg);background-size:cover;">
+      <div class="tl5"></div>
+      <div class="br5"></div>
+      <div class="details">
+        <h3>Ilish Polao</h3>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food of Tamil Nadu</title>
+</head>
+<style>
+	.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+.box img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+.box span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+h2{
+		font-size: 60px;
+		font-family: Brush Script MT;
+		text-align: center;	
+     	text-shadow:0 0 25px;
+}
+p{
+		font-size: 30px;
+		font-family:Monotype Corsiva;
+		text-align: justify;
+		margin: 10px;
+		padding: 30px;
+		text-shadow:3px 2px 7px;
+}
+</style>
+<body>
+	<h2>Tamil Nadu</h2>
+	<p>South Indian food is revered and loved around the country and beyond it. The unique flavours, the tangy twist, the sweet infusions and the plethora of vegetables used in any recipe is a head-turner for most vegetarians and non-vegetarians alike. But, it is also considered criminal to group all south Indian food under one broad banner. Tamil Nadu Food is very different from the food of other regions like Kerala, Andhra Pradesh and Karnataka.</p>
+    <div class="container">
+  <div class="box">
+    <img src="utt.jpg">
+    <span>Uttapam</span>
+  </div>
+  <div class="box">
+    <img src="dho.jpg">
+    <span>Dhosa</span>
+  </div>
+  <div class="box">
+    <img src="idly.jpg">
+    <span>Idly vada</span>
+  </div>
+  <div class="box">
+    <img src="pani.jpg">
+    <span>Paniyaram</span>
+  </div>
+  <div class="box">
+    <img src="pulio.jpg">
+    <span>Puliodarai</span>
+  </div>
+  <div class="box">
+    <img src="ras.jpg">
+    <span>Rasam</span>
+  </div>
+</div>
+</body>
+</html>

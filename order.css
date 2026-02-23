@@ -1,0 +1,61 @@
+div.x{
+			background-image: url(32.jpg);
+			background-size: cover;
+		}
+		legend.a{
+			font-size: 60px;
+			font-family: Brush Script MT;
+			color: blue;
+		}
+		h1{
+			font-size: 50px;
+			font-family: Brush Script MT;
+			margin: 0;
+			text-align: center;
+			color: maroon;
+		}
+		div.b{
+			margin: 20px;
+			text-align: center;
+			font-size: 30px;
+            font-family: Lucida Calligraphy;
+		}
+		table.c{
+			box-sizing: 200px;
+
+		}
+		div.d{
+			border:2px solid black;
+			border-radius: 30px;
+			width: 350px;
+			height: 430px;
+			margin: 10px;
+			padding: 20px;
+			text-align: justify;
+		}
+		h2{
+			font-family:Lucida Calligraphy;
+			font-size: 20px;
+		}
+		div.e{
+			border:2px solid black;
+			border-radius: 30px;
+			width: 350px;margin: 20px;
+			height: 430px;padding: 19px;
+			font-size: 30px;
+			text-align:justify;
+			font-family: Lucida Calligraphy;
+		}
+		div.f{
+			border:2px solid black;
+			border-radius: 30px;
+			width: 350px;
+			height: 430px;
+			padding: 20px;
+			margin: 20px;
+			text-align: justify;
+		}
+		div.g{
+		      text-align: center;
+		}
+		
